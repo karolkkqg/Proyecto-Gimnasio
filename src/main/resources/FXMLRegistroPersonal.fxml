@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.bg.gui.FXMLRegistroPersonalControlador">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="559.0" layoutX="-21.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="485.0" />
+      <Label layoutX="119.0" layoutY="29.0" text="Registrar Personal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="64.0" prefHeight="40.0" prefWidth="227.0" text="Nombre (s):" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="253.0" prefHeight="40.0" prefWidth="227.0" text="Fecha de nacimiento:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="316.0" prefHeight="40.0" prefWidth="227.0" text="Correo:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="381.0" prefHeight="40.0" prefWidth="227.0" text="Numero de telefono:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreTextField" layoutX="50.0" layoutY="104.0" prefHeight="25.0" prefWidth="386.0" />
+      <TextField fx:id="correoTextField" layoutX="48.0" layoutY="356.0" prefHeight="25.0" prefWidth="386.0" />
+      <TextField fx:id="telefonoTextField" layoutX="48.0" layoutY="422.0" prefHeight="25.0" prefWidth="386.0" />
+      <Button fx:id="guardarButton" layoutX="243.0" layoutY="476.0" mnemonicParsing="false" onAction="#confirmarRegistroPersonal" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: gray;" text="Guardar" textFill="WHITE" />
+      <Button fx:id="cancelarButton" layoutX="357.0" layoutY="476.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: gray;" text="Cancelar" textFill="WHITE" />
+      <Label layoutX="37.0" layoutY="129.0" prefHeight="40.0" prefWidth="227.0" text="Apellido paterno:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="maternoTextField" layoutX="50.0" layoutY="228.0" prefHeight="25.0" prefWidth="386.0" />
+      <Label layoutX="37.0" layoutY="188.0" prefHeight="40.0" prefWidth="227.0" text="Apellido materno:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="paternoTextField" layoutX="48.0" layoutY="169.0" prefHeight="25.0" prefWidth="386.0" />
+      <DatePicker fx:id="fechaNacimientoDatePicker" layoutX="48.0" layoutY="293.0" />
+      <Label fx:id="errorNombre" layoutX="18.0" layoutY="93.0" prefHeight="47.0" prefWidth="19.0" text="*" textFill="#ff0202">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorPaterno" layoutX="18.0" layoutY="158.0" prefHeight="47.0" prefWidth="19.0" text="*" textFill="RED">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMaterno" layoutX="18.0" layoutY="217.0" prefHeight="47.0" prefWidth="19.0" text="*" textFill="RED">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorNacimiento" layoutX="18.0" layoutY="282.0" prefHeight="47.0" prefWidth="19.0" text="*" textFill="RED">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorCorreo" layoutX="18.0" layoutY="345.0" prefHeight="47.0" prefWidth="19.0" text="*" textFill="RED">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorTelefono" layoutX="18.0" layoutY="411.0" prefHeight="47.0" prefWidth="19.0" text="*" textFill="RED">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

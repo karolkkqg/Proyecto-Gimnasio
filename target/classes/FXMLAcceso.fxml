@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.bg.gui.FXMLAccesoControlador">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-2.0" prefHeight="612.0" prefWidth="496.0" style="-fx-background-color: black;">
+         <children>
+            <TextField id="txtCorreo" fx:id="txtCorreo" layoutX="116.0" layoutY="342.0" prefHeight="26.0" prefWidth="275.0" style="-fx-opacity: #ffffff;" />
+            <Button id="btnRegistrar" layoutX="31.0" layoutY="543.0" mnemonicParsing="false" onAction="#registroUsuarioNuevo" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: gray;" text="Registrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect></Button>
+            <Button id="btnIniciarSesion" layoutX="364.0" layoutY="543.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: gray;" text="Iniciar sesión" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="111.0" fitWidth="119.0" layoutX="246.0" layoutY="29.0">
+               <image>
+                  <Image url="@../imagenes/VIC-TRANS.png" />
+               </image>
+            </ImageView>
+            <PasswordField id="pwdContrasena" fx:id="pwdContrasena" layoutX="116.0" layoutY="407.0" prefHeight="26.0" prefWidth="275.0" />
+            <Label layoutX="225.0" layoutY="368.0" text="Correo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="208.0" layoutY="433.0" text="Contraseña" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <ImageView fitHeight="272.0" fitWidth="232.0" layoutX="138.0" layoutY="29.0">
+               <image>
+                  <Image url="@../../../../recursos/ajam.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="148.0" layoutY="10.0" text="BLACK GYM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="284.0" layoutY="52.0" startX="-177.20001220703125" startY="-7.62939453125E-6" stroke="WHITE" />
+            <AmbientLight color="CHARTREUSE" layoutX="272.0" layoutY="150.0" lightOn="true" />
+            <Line endX="99.0" endY="10.0" layoutX="248.0" startX="-100.0" startY="10.0" stroke="WHITE" />
+            <ImageView fitHeight="241.0" fitWidth="194.0" layoutX="157.0" layoutY="85.0">
+               <image>
+                  <Image url="@../../../../../../recursos/ajam.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="230.0" fitWidth="194.0" layoutX="149.0" layoutY="74.0">
+               <image>
+                  <Image url="@imagenes/ajam.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

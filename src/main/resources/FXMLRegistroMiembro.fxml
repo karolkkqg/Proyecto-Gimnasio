@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.bg.gui.FXMLRegistroMiembroController">
+   <children>
+      <Button id="btnRegresar" fx:id="btnRegresar" layoutX="19.0" layoutY="18.0" mnemonicParsing="false" onAction="#regresarPantallaAnterior" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: gray;" text="Regresar" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="0.25" contrast="0.06" hue="-1.0" saturation="-1.0" />
+         </effect></Button>
+      <Label layoutX="117.0" layoutY="57.0" text="Registrar miembro" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button id="btnGuardar" layoutX="326.0" layoutY="536.0" mnemonicParsing="false" onAction="#registrarMiembro" prefHeight="20.0" prefWidth="76.0" style="-fx-background-color: gray;" text="Guardar" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="0.25" contrast="0.06" />
+         </effect></Button>
+      <Label layoutX="82.0" layoutY="98.0" text="Nombre" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="184.0" text="Contraseña" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="266.0" text="Correo" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="307.0" layoutY="266.0" text="Edad" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="342.0" text="Teléfono" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="342.0" text="Dirección" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="txtNombre" fx:id="txtNombre" layoutX="34.0" layoutY="136.0" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: white;" />
+      <TextField id="txtApellidoPaterno" fx:id="txtApellidoPaterno" layoutX="249.0" layoutY="136.0" prefHeight="26.0" prefWidth="165.0" />
+      <TextField id="txtApellidoMaterno" fx:id="txtApellidoMaterno" layoutX="34.0" layoutY="217.0" prefHeight="26.0" prefWidth="166.0" />
+      <PasswordField fx:id="txtContrasena" layoutX="249.0" layoutY="217.0" prefHeight="26.0" prefWidth="166.0" />
+      <TextField id="txtCorreo" fx:id="txtCorreo" layoutX="34.0" layoutY="300.0" prefHeight="26.0" prefWidth="165.0" />
+      <TextField id="txtEdad" fx:id="txtEdad" layoutX="249.0" layoutY="300.0" prefHeight="26.0" prefWidth="165.0" />
+      <TextField id="txtTelefono" fx:id="txtTelefono" layoutX="34.0" layoutY="378.0" prefHeight="26.0" prefWidth="166.0" />
+      <TextField id="txtDireccion" fx:id="txtDireccion" layoutX="248.0" layoutY="378.0" prefHeight="26.0" prefWidth="166.0" />
+      <Label layoutX="53.0" layoutY="460.0" text="Seleccione la membresía:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView id="tblMembresia" fx:id="tblMembresia" layoutX="34.0" layoutY="485.0" onMouseClicked="#seleccionaFila" prefHeight="79.0" prefWidth="256.0" style="-fx-background-color: FFFFFF;">
+        <columns>
+          <TableColumn id="tblcNombre" fx:id="tblcNombre" prefWidth="182.40002822875977" text="Membresia" />
+          <TableColumn id="tblcPrecio" fx:id="tblcPrecio" prefWidth="73.59996032714844" text="Precio" />
+        </columns>
+      </TableView>
+      <TextField id="txtIdMembresia" fx:id="txtIdMembresia" editable="false" layoutX="275.0" layoutY="19.0" />
+      <Label layoutX="59.0" layoutY="184.0" text="Apellido materno" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="98.0" text="Apellido paterno" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
